@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+
+    <title>MAC Address Lookup Tool</title>
+
+    <meta name="description" content="Free MAC Address Lookup tool to identify vendor information and network device manufacturers instantly." />
+    <meta name="keywords" content="MAC Address Lookup, MAC Checker, Vendor Lookup, Network Tool, Bootstrap Tool" />
+    <meta name="author" content="MAC Address Lookup Tool" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2092/2092663.png">
+</head>
+
+<body class="bg-light text-dark">
+
+    <!-- Header -->
+    <header class="border-bottom bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <a href="#" class="text-decoration-none text-dark fw-bold fs-4">
+                    <i class="fa-solid fa-network-wired me-2 text-primary"></i>
+                    MAC Lookup
+                </a>
+
+                <nav>
+                    <a href="#" class="text-decoration-none text-secondary me-3">Home</a>
+                    <a href="#" class="text-decoration-none text-secondary me-3">Tools</a>
+                    <a href="#" class="text-decoration-none text-secondary">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow-1">
+
+        <!-- Hero -->
+        <section class="py-5 bg-white border-bottom">
+            <div class="container text-center">
+
+                <div class="mb-4">
+                    <span class="badge bg-primary-subtle text-primary px-3 py-2">
+                        Network Utility Tool
+                    </span>
+                </div>
+
+                <h1 class="fw-bold display-5 mb-3">
+                    MAC Address Lookup
+                </h1>
+
+                <p class="text-secondary mx-auto mb-4" style="max-width: 700px;">
+                    Quickly identify device manufacturers and vendor details using any MAC address.
+                    Simple, fast, responsive, and modern network lookup utility.
+                </p>
+
+                <!-- Lookup Card -->
+                <div class="card border-0 shadow-sm mx-auto" style="max-width: 700px;">
+                    <div class="card-body p-4">
+
+                        <div class="input-group input-group-lg mb-3">
+                            <span class="input-group-text bg-white">
+                                <i class="fa-solid fa-microchip text-primary"></i>
+                            </span>
+
+                            <input
+                                type="text"
+                                id="macInput"
+                                class="form-control"
+                                placeholder="Enter MAC Address (Example: 00:1A:2B:3C:4D:5E)"
+                            >
+                        </div>
+
+                        <button
+                            class="btn btn-primary btn-lg w-100"
+                            onclick="lookupMAC()"
+                        >
+                            <i class="fa-solid fa-magnifying-glass me-2"></i>
+                            Lookup MAC Address
+                        </button>
+
+                        <!-- Result -->
+                        <div
+                            id="resultBox"
+                            class="alert alert-light border mt-4 mb-0 d-none text-start"
+                        >
+                            <h5 class="fw-bold mb-3">
+                                <i class="fa-solid fa-circle-info text-primary me-2"></i>
+                                Lookup Result
+                            </h5>
+
+                            <div class="mb-2">
+                                <strong>MAC Address:</strong>
+                                <span id="resultMac">-</span>
+                            </div>
+
+                            <div class="mb-2">
+                                <strong>Vendor:</strong>
+                                <span id="resultVendor">-</span>
+                            </div>
+
+                            <div>
+                                <strong>Status:</strong>
+                                <span class="text-success">Valid Format</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="py-5">
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-bolt fs-2 text-primary"></i>
+                                </div>
+
+                                <h4 class="fw-bold mb-3">
+                                    Fast Lookup
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Instantly detect hardware manufacturers from MAC addresses
+                                    with a clean and lightweight interface.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-shield-halved fs-2 text-primary"></i>
+                                </div>
+
+                                <h4 class="fw-bold mb-3">
+                                    Secure & Simple
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    No login required. Easily validate and inspect MAC address
+                                    vendor information directly from your browser.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="card-body p-4">
+
+                                <div class="mb-3">
+                                    <i class="fa-solid fa-mobile-screen-button fs-2 text-primary"></i>
+                                </div>
+
+                                <h4 class="fw-bold mb-3">
+                                    Fully Responsive
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Optimized for desktop, tablet, and mobile devices using
+                                    modern Bootstrap responsive layouts.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ad Space -->
+        <section class="pb-5">
+            <div class="container">
+
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body text-center py-5">
+
+                        <div class="mb-3">
+                            <i class="fa-solid fa-rectangle-ad fs-1 text-secondary"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Advertisement Space
+                        </h5>
+
+                        <p class="text-secondary mb-0">
+                            Responsive banner advertisement area for Google AdSense or other ad networks.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-4 mt-auto">
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <div class="fw-semibold">
+                        © 2026 MAC Lookup Tool
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary">
+                        Terms of Service
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        function lookupMAC() {
+            const macInput = document.getElementById('macInput').value.trim();
+            const resultBox = document.getElementById('resultBox');
+            const resultMac = document.getElementById('resultMac');
+            const resultVendor = document.getElementById('resultVendor');
+
+            const macRegex = /^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/;
+
+            if (!macRegex.test(macInput)) {
+                resultBox.classList.remove('d-none', 'alert-light');
+                resultBox.classList.add('alert-danger');
+
+                resultBox.innerHTML = `
+                    <i class="fa-solid fa-circle-exclamation me-2"></i>
+                    Invalid MAC Address format.
+                `;
+                return;
+            }
+
+            resultBox.classList.remove('d-none', 'alert-danger');
+            resultBox.classList.add('alert-light');
+
+            resultBox.innerHTML = `
+                <h5 class="fw-bold mb-3">
+                    <i class="fa-solid fa-circle-info text-primary me-2"></i>
+                    Lookup Result
+                </h5>
+
+                <div class="mb-2">
+                    <strong>MAC Address:</strong>
+                    ${macInput}
+                </div>
+
+                <div class="mb-2">
+                    <strong>Vendor:</strong>
+                    Example Network Vendor
+                </div>
+
+                <div>
+                    <strong>Status:</strong>
+                    <span class="text-success">Valid Format</span>
+                </div>
+            `;
+        }
+    </script>
+
+</body>
+</html>
