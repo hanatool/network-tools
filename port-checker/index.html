@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        name='viewport' />
 
     <title>Port Checker Tool</title>
 
@@ -20,20 +22,32 @@
 <body class="bg-light text-dark">
 
     <!-- Header -->
-    <header class="border-bottom bg-white shadow-sm">
+    <header class="border-bottom bg-white shadow-none sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a href="#" class="text-decoration-none text-dark fw-bold fs-4">
-                    <i class="fa-solid fa-network-wired me-2"></i>
+                <a href="#" class="navbar-brand text-decoration-none text-dark fw-bold">
+                    <i class="fa-solid fa-network-wired text-primary me-2"></i>
                     Port Checker
                 </a>
 
-                <nav>
-                    <a href="#" class="text-decoration-none text-secondary me-3">Home</a>
-                    <a href="#" class="text-decoration-none text-secondary me-3">Tools</a>
-                    <a href="#" class="text-decoration-none text-secondary">Contact</a>
-                </nav>
-            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -56,7 +70,8 @@
                             </h1>
 
                             <p class="text-secondary mb-0">
-                                Check whether a TCP port is open or closed on your server, VPS, router, or website quickly and easily.
+                                Check whether a TCP port is open or closed on your server, VPS, router, or website
+                                quickly and easily.
                             </p>
                         </div>
 
@@ -68,13 +83,8 @@
                                     Host / IP Address
                                 </label>
 
-                                <input
-                                    type="text"
-                                    class="form-control form-control-lg"
-                                    id="host"
-                                    placeholder="example.com or 192.168.1.1"
-                                    required
-                                />
+                                <input type="text" class="form-control form-control-lg" id="host"
+                                    placeholder="example.com or 192.168.1.1" required />
                             </div>
 
                             <div class="mb-4">
@@ -82,13 +92,8 @@
                                     Port Number
                                 </label>
 
-                                <input
-                                    type="number"
-                                    class="form-control form-control-lg"
-                                    id="port"
-                                    placeholder="80"
-                                    required
-                                />
+                                <input type="number" class="form-control form-control-lg" id="port" placeholder="80"
+                                    required />
                             </div>
 
                             <div class="d-grid">
@@ -158,11 +163,14 @@
                         </h2>
 
                         <p class="text-secondary">
-                            This online port checker helps you verify whether a specific TCP port is accessible from the internet. It is useful for testing web servers, game servers, VPS configurations, routers, firewalls, and custom applications.
+                            This online port checker helps you verify whether a specific TCP port is accessible from the
+                            internet. It is useful for testing web servers, game servers, VPS configurations, routers,
+                            firewalls, and custom applications.
                         </p>
 
                         <p class="text-secondary mb-0">
-                            Simply enter a hostname or IP address along with the desired port number, then run the check instantly using this responsive and lightweight networking utility.
+                            Simply enter a hostname or IP address along with the desired port number, then run the check
+                            instantly using this responsive and lightweight networking utility.
                         </p>
 
                     </div>
@@ -209,7 +217,7 @@
         const resultBox = document.getElementById('resultBox');
         const resultText = document.getElementById('resultText');
 
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
 
             const host = document.getElementById('host').value;
@@ -247,4 +255,5 @@
     </script>
 
 </body>
+
 </html>

@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        name='viewport' />
 
     <title>Whois Lookup Tool</title>
 
     <meta name="title" content="Whois Lookup Tool">
-    <meta name="description" content="Free online Whois Lookup tool to check domain registration details, registrar information, expiration date, and nameservers instantly.">
+    <meta name="description"
+        content="Free online Whois Lookup tool to check domain registration details, registrar information, expiration date, and nameservers instantly.">
     <meta name="keywords" content="whois lookup, domain lookup, whois checker, dns lookup, domain information">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Whois Lookup Tool">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Whois Lookup Tool">
-    <meta property="og:description" content="Check domain registration details quickly using our free Whois Lookup tool.">
+    <meta property="og:description"
+        content="Check domain registration details quickly using our free Whois Lookup tool.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body class="bg-light text-dark">
 
     <!-- Header -->
-    <header class="border-bottom bg-white shadow-sm">
+    <header class="border-bottom bg-white shadow-none sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <a href="#" class="text-decoration-none text-dark fw-bold fs-4">
+                <a href="#" class="navbar-brand text-decoration-none text-dark fw-bold">
                     <i class="fa-solid fa-globe me-2 text-primary"></i>
                     Whois Lookup
                 </a>
 
-                <nav class="d-none d-md-flex gap-4">
-                    <a href="#" class="text-decoration-none text-secondary">Home</a>
-                    <a href="#" class="text-decoration-none text-secondary">Tools</a>
-                    <a href="#" class="text-decoration-none text-secondary">API</a>
-                    <a href="#" class="text-decoration-none text-secondary">Contact</a>
-                </nav>
-            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tools</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -64,12 +80,8 @@
                                         <i class="fa-solid fa-magnifying-glass text-secondary"></i>
                                     </span>
 
-                                    <input 
-                                        type="text" 
-                                        id="domainInput"
-                                        class="form-control border-start-0"
-                                        placeholder="Enter domain name..."
-                                    >
+                                    <input type="text" id="domainInput" class="form-control border-start-0"
+                                        placeholder="Enter domain name...">
 
                                     <button class="btn btn-primary px-4" type="submit">
                                         Lookup
@@ -254,7 +266,7 @@
         const form = document.getElementById('whoisForm');
         const domainInput = document.getElementById('domainInput');
 
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
 
             const domain = domainInput.value.trim();
@@ -271,4 +283,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

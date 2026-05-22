@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport' />
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        name='viewport' />
     <meta name="description" content="DNS Propagation Checker tool to verify DNS records propagation worldwide." />
     <meta name="keywords" content="DNS Propagation Checker, DNS Lookup, DNS Checker, DNS Tool" />
     <meta name="author" content="DNS Propagation Checker" />
@@ -18,280 +20,277 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <body class="bg-light" style="font-family: 'Inter', sans-serif;">
-</head>
-<body class="bg-light text-dark">
+<body class="bg-light" style="font-family: 'Inter', sans-serif;">
+    </head>
 
-    <!-- Header -->
-    <header class="border-bottom bg-white sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#">
-                    <i class="fa-solid fa-globe me-2"></i>DNS Checker
-                </a>
+    <body class="bg-light text-dark">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Header -->
+        <header class="border-bottom bg-white sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container">
+                    <a class="navbar-brand fw-bold text-primary" href="#">
+                        <i class="fa-solid fa-globe me-2"></i>DNS Checker
+                    </a>
 
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tools</a>
-                        </li>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tools</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <!-- Hero -->
-    <section class="py-5 bg-white border-bottom">
-        <div class="container text-center">
+        <!-- Hero -->
+        <section class="py-5 bg-white border-bottom">
+            <div class="container text-center">
 
-            <div class="mb-4">
-                <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">
-                    DNS Lookup Tool
-                </span>
-            </div>
-
-            <h1 class="fw-bold mb-3">
-                DNS Propagation Checker
-            </h1>
-
-            <p class="text-secondary mx-auto mb-4" style="max-width: 720px;">
-                Instantly check DNS propagation status from multiple global DNS servers.
-                Verify A, AAAA, CNAME, MX, TXT, NS, and other DNS records in real time.
-            </p>
-
-            <!-- Search Form -->
-            <div class="card border-0 shadow-sm mx-auto" style="max-width: 850px;">
-                <div class="card-body p-4">
-
-                    <form id="dnsForm">
-                        <div class="row g-3">
-
-                            <div class="col-lg-6">
-                                <input
-                                    type="text"
-                                    id="domainInput"
-                                    class="form-control form-control-lg"
-                                    placeholder="Enter domain name"
-                                    required
-                                />
-                            </div>
-
-                            <div class="col-lg-3">
-                                <select class="form-select form-select-lg" id="recordType">
-                                    <option value="A">A Record</option>
-                                    <option value="AAAA">AAAA Record</option>
-                                    <option value="CNAME">CNAME Record</option>
-                                    <option value="MX">MX Record</option>
-                                    <option value="TXT">TXT Record</option>
-                                    <option value="NS">NS Record</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-3 d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg">
-                                    <i class="fa-solid fa-magnifying-glass me-2"></i>
-                                    Check DNS
-                                </button>
-                            </div>
-
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Ad Section -->
-    <section class="py-4">
-        <div class="container">
-            <div class="bg-white border rounded-4 p-4 text-center shadow-sm">
-                <small class="text-muted d-block mb-2">Advertisement</small>
-
-                <div class="d-flex align-items-center justify-content-center bg-light rounded-3"
-                     style="height: 120px;">
-                    <span class="text-secondary">
-                        728 x 90 Ad Space
+                <div class="mb-4">
+                    <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill">
+                        DNS Lookup Tool
                     </span>
                 </div>
+
+                <h1 class="fw-bold mb-3">
+                    DNS Propagation Checker
+                </h1>
+
+                <p class="text-secondary mx-auto mb-4" style="max-width: 720px;">
+                    Instantly check DNS propagation status from multiple global DNS servers.
+                    Verify A, AAAA, CNAME, MX, TXT, NS, and other DNS records in real time.
+                </p>
+
+                <!-- Search Form -->
+                <div class="card border-0 shadow-sm mx-auto" style="max-width: 850px;">
+                    <div class="card-body p-4">
+
+                        <form id="dnsForm">
+                            <div class="row g-3">
+
+                                <div class="col-lg-6">
+                                    <input type="text" id="domainInput" class="form-control form-control-lg"
+                                        placeholder="Enter domain name" required />
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <select class="form-select form-select-lg" id="recordType">
+                                        <option value="A">A Record</option>
+                                        <option value="AAAA">AAAA Record</option>
+                                        <option value="CNAME">CNAME Record</option>
+                                        <option value="MX">MX Record</option>
+                                        <option value="TXT">TXT Record</option>
+                                        <option value="NS">NS Record</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-3 d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fa-solid fa-magnifying-glass me-2"></i>
+                                        Check DNS
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Result Section -->
-    <section class="pb-5">
-        <div class="container">
+        <!-- Ad Section -->
+        <section class="py-4">
+            <div class="container">
+                <div class="bg-white border rounded-4 p-4 text-center shadow-sm">
+                    <small class="text-muted d-block mb-2">Advertisement</small>
 
-            <div class="card border-0 shadow-sm rounded-4">
-                <div class="card-body p-4">
+                    <div class="d-flex align-items-center justify-content-center bg-light rounded-3"
+                        style="height: 120px;">
+                        <span class="text-secondary">
+                            728 x 90 Ad Space
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
-                        <div>
-                            <h4 class="fw-bold mb-1">
-                                DNS Propagation Result
-                            </h4>
+        <!-- Result Section -->
+        <section class="pb-5">
+            <div class="container">
 
-                            <p class="text-secondary mb-0">
-                                Live DNS lookup status from worldwide locations.
-                            </p>
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+                            <div>
+                                <h4 class="fw-bold mb-1">
+                                    DNS Propagation Result
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Live DNS lookup status from worldwide locations.
+                                </p>
+                            </div>
+
+                            <span class="badge bg-success-subtle text-success mt-3 mt-lg-0">
+                                Live Status
+                            </span>
                         </div>
 
-                        <span class="badge bg-success-subtle text-success mt-3 mt-lg-0">
-                            Live Status
+                        <div class="table-responsive">
+
+                            <table class="table align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Location</th>
+                                        <th>Status</th>
+                                        <th>Response Time</th>
+                                        <th>IP Address</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="resultBody">
+
+                                    <tr>
+                                        <td>New York, USA</td>
+                                        <td>
+                                            <span class="badge bg-success">
+                                                Propagated
+                                            </span>
+                                        </td>
+                                        <td>24ms</td>
+                                        <td>192.168.1.1</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>London, UK</td>
+                                        <td>
+                                            <span class="badge bg-warning text-dark">
+                                                Pending
+                                            </span>
+                                        </td>
+                                        <td>39ms</td>
+                                        <td>192.168.1.1</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Singapore</td>
+                                        <td>
+                                            <span class="badge bg-success">
+                                                Propagated
+                                            </span>
+                                        </td>
+                                        <td>18ms</td>
+                                        <td>192.168.1.1</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section class="pb-5">
+            <div class="container">
+
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-body p-4 p-lg-5">
+
+                        <h3 class="fw-bold mb-3">
+                            About DNS Propagation Checker
+                        </h3>
+
+                        <p class="text-secondary mb-3">
+                            DNS propagation is the process of updating DNS records across internet servers worldwide.
+                            This tool helps you monitor whether your DNS changes have propagated successfully.
+                        </p>
+
+                        <p class="text-secondary mb-0">
+                            Use this checker to verify domain configurations, troubleshoot DNS issues,
+                            and ensure your website is accessible globally after updating records.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white border-top py-4">
+            <div class="container">
+
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+                        <span class="fw-semibold">
+                            © 2026 DNS Checker
                         </span>
                     </div>
 
-                    <div class="table-responsive">
+                    <div class="col-lg-6 text-center text-lg-end">
+                        <a href="#" class="text-decoration-none text-secondary me-3">
+                            Privacy Policy
+                        </a>
 
-                        <table class="table align-middle">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>Location</th>
-                                    <th>Status</th>
-                                    <th>Response Time</th>
-                                    <th>IP Address</th>
-                                </tr>
-                            </thead>
+                        <a href="#" class="text-decoration-none text-secondary me-3">
+                            Terms
+                        </a>
 
-                            <tbody id="resultBody">
-
-                                <tr>
-                                    <td>New York, USA</td>
-                                    <td>
-                                        <span class="badge bg-success">
-                                            Propagated
-                                        </span>
-                                    </td>
-                                    <td>24ms</td>
-                                    <td>192.168.1.1</td>
-                                </tr>
-
-                                <tr>
-                                    <td>London, UK</td>
-                                    <td>
-                                        <span class="badge bg-warning text-dark">
-                                            Pending
-                                        </span>
-                                    </td>
-                                    <td>39ms</td>
-                                    <td>192.168.1.1</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Singapore</td>
-                                    <td>
-                                        <span class="badge bg-success">
-                                            Propagated
-                                        </span>
-                                    </td>
-                                    <td>18ms</td>
-                                    <td>192.168.1.1</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
+                        <a href="#" class="text-decoration-none text-secondary">
+                            Contact
+                        </a>
                     </div>
 
                 </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Description -->
-    <section class="pb-5">
-        <div class="container">
-
-            <div class="card border-0 shadow-sm rounded-4">
-                <div class="card-body p-4 p-lg-5">
-
-                    <h3 class="fw-bold mb-3">
-                        About DNS Propagation Checker
-                    </h3>
-
-                    <p class="text-secondary mb-3">
-                        DNS propagation is the process of updating DNS records across internet servers worldwide.
-                        This tool helps you monitor whether your DNS changes have propagated successfully.
-                    </p>
-
-                    <p class="text-secondary mb-0">
-                        Use this checker to verify domain configurations, troubleshoot DNS issues,
-                        and ensure your website is accessible globally after updating records.
-                    </p>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-white border-top py-4">
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
-                    <span class="fw-semibold">
-                        © 2026 DNS Checker
-                    </span>
-                </div>
-
-                <div class="col-lg-6 text-center text-lg-end">
-                    <a href="#" class="text-decoration-none text-secondary me-3">
-                        Privacy Policy
-                    </a>
-
-                    <a href="#" class="text-decoration-none text-secondary me-3">
-                        Terms
-                    </a>
-
-                    <a href="#" class="text-decoration-none text-secondary">
-                        Contact
-                    </a>
-                </div>
 
             </div>
+        </footer>
 
-        </div>
-    </footer>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Script -->
+        <script>
+            const dnsForm = document.getElementById('dnsForm');
 
-    <!-- Script -->
-    <script>
-        const dnsForm = document.getElementById('dnsForm');
+            dnsForm.addEventListener('submit', function (e) {
+                e.preventDefault();
 
-        dnsForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+                const domain = document.getElementById('domainInput').value;
+                const type = document.getElementById('recordType').value;
 
-            const domain = document.getElementById('domainInput').value;
-            const type = document.getElementById('recordType').value;
+                if (!domain) {
+                    alert('Please enter a domain name.');
+                    return;
+                }
 
-            if (!domain) {
-                alert('Please enter a domain name.');
-                return;
-            }
+                alert(`Checking ${type} records for ${domain}`);
+            });
+        </script>
 
-            alert(`Checking ${type} records for ${domain}`);
-        });
-    </script>
+    </body>
 
-</body>
 </html>
