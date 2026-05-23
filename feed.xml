@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+  <channel>
+
+    <title>Hanapha Network Tools</title>
+    <link>https://tools.hanapha.com/network-tools/</link>
+
+    <description>
+      Free online network tools for DNS checking, IP lookup, ping testing, traceroute analysis, WHOIS lookup, and network diagnostics.
+    </description>
+
+    <language>en-us</language>
+
+    <item>
+      <title>DNS Propagation Checker</title>
+      <link>https://tools.hanapha.com/network-tools/dns-propagation-checker</link>
+      <description>
+        Check global DNS propagation status instantly online.
+      </description>
+    </item>
+
+    <item>
+      <title>IP Geolocation</title>
+      <link>https://tools.hanapha.com/network-tools/ip-geolocation</link>
+      <description>
+        Find geolocation details and information for IP addresses.
+      </description>
+    </item>
+
+    <item>
+      <title>MAC Address Lookup</title>
+      <link>https://tools.hanapha.com/network-tools/mac-address-lookup</link>
+      <description>
+        Lookup vendor and manufacturer details for MAC addresses.
+      </description>
+    </item>
+
+    <item>
+      <title>Ping Tool</title>
+      <link>https://tools.hanapha.com/network-tools/ping-tool</link>
+      <description>
+        Test server response time and connectivity with online ping.
+      </description>
+    </item>
+
+    <item>
+      <title>Port Checker</title>
+      <link>https://tools.hanapha.com/network-tools/port-checker</link>
+      <description>
+        Check whether specific ports are open or closed online.
+      </description>
+    </item>
+
+    <item>
+      <title>Traceroute Tool</title>
+      <link>https://tools.hanapha.com/network-tools/traceroute-tool</link>
+      <description>
+        Analyze network routes and connection paths online.
+      </description>
+    </item>
+
+    <item>
+      <title>WHOIS Lookup</title>
+      <link>https://tools.hanapha.com/network-tools/whois-lookup</link>
+      <description>
+        Retrieve WHOIS domain registration information instantly.
+      </description>
+    </item>
+
+  </channel>
+
+</rss>

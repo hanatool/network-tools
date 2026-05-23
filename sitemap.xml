@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/dns-propagation-checker</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/ip-geolocation</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/mac-address-lookup</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/ping-tool</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/port-checker</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/traceroute-tool</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/whois-lookup</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/404.html</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/index.html</loc>
+  </url>
+
+  <url>
+    <loc>https://tools.hanapha.com/network-tools/README.md</loc>
+  </url>
+
+</urlset>
